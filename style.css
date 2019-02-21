@@ -1,3 +1,38 @@
-.carousel {
-    height: 300px;
+*{
+    /* background: black; */
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.jumbotron{
+    background-color: black;
+    text-align: center;
+    margin: 0%;
+    background-color: brown;
+}
+
+.navbar{
+    margin: 0%;
+    background-color: burlywood;
+}
+
+#myCarousel {
+    height: 400px;
+    width: auto;
+    
+}
+
+.carousel-item{
+    margin: 25%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+#contactForm{
+    
+}
+
+.footer{
+    text-align: center;
 }
