@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sand Box</title>
+    <link rel='icon' href='assets/images/mtn.JPG' type='image/x-icon' />
+    <title>Reinwald Resume</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -21,19 +22,29 @@
         </span>
         <span class="h6 navbar-text text-right">
             (949)923-8758
-            |
+            <i class="fas fa-grip-lines-vertical"></i>
             dreinwaldmail@gmail.com
         </span>
 
     </nav>
-    <!-- navbar list -->
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a data-toggle="modal" href="#aboutMe">About Me</a></li>
-        <li><a data-toggle="modal" href="#education">Education</a></li>
-        <li><a data-toggle="modal" href="#experience">Experience</a></li>
 
-    </ul>
+    <!-- navbar list -->
+
+    <div id="MainNav" class="container-fluid align-middle">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a data-toggle="modal" href="#aboutMe">About Me</a></li>
+            <li><a data-toggle="modal" href="#education">Education</a></li>
+            <li><a data-toggle="modal" href="#experience">Experience</a></li>
+        </ul>
+    </div>
+
+    <section>
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+
+    </section>
     <!-- about me modal -->
     <div class="modal fade" id="aboutMe" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
         aria-hidden="true">
@@ -85,10 +96,13 @@
                 </div>
                 <div class="modal-footer">
                     <div class="container">
-                        <div class="row">
-                            <div class="col">
-
+                        <div class="row justify-content-md-center">
+                            <div class="col-md-auto">
+                                <h5 class="align-middle"> Certifcations</h5>
                             </div>
+                        </div>
+                        <div class="row">
+                            <div class="col"> </div>
                             <div class="col align-middle">
                                 <iframe frameborder="0" scrolling="no"
                                     src="https://uci.credly.com/embed.html#/?member_badge_id=15438213" width="180"
@@ -97,29 +111,20 @@
                                     src="https://uci.credly.com/embed.html#/?member_badge_id=15438229" width="180"
                                     height="230"></iframe>
                             </div>
-                            <div class="col">
-
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
-
-                                </div>
-                                <div class="col align-middle">
-                                    <iframe frameborder="0" scrolling="no"
-                                        src="https://uci.credly.com/embed.html#/?member_badge_id=15438259" width="180"
-                                        height="230"></iframe>
-                                </div>
-                                <div class="col">
-
-                                </div>
-                            </div>
+                            <div class="col"></div>
                         </div>
                         <div class="row">
-                            <div class="col">
-
+                            <div class="col"></div>
+                            <div class="col align-middle">
+                                <iframe frameborder="0" scrolling="no"
+                                    src="https://uci.credly.com/embed.html#/?member_badge_id=15438259" width="180"
+                                    height="230"></iframe>
                             </div>
+                            <div class="col"></div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col"></div>
                             <div class="col align-middle">
                                 <iframe frameborder="0" scrolling="no"
                                     src="https://uci.credly.com/embed.html#/?member_badge_id=15438272" width="180"
@@ -128,9 +133,7 @@
                                     src="https://uci.credly.com/embed.html#/?member_badge_id=15438243" width="180"
                                     height="230"></iframe>
                             </div>
-                            <div class="col">
-
-                            </div>
+                            <div class="col"></div>
                         </div>
                     </div>
                 </div>
@@ -160,22 +163,65 @@
                         <div class="row card">
                             <div class="col card-body">
                                 <h5 class="card-title">Tillys, World of Jeans</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Administrative Assistant</h6>
-                                <p class="card-text">Stuff about position</p>
+                                <h6 class="card-subtitle mb-2 text-muted">Administrative Assistant | March 2017 - March
+                                    2018 </h6>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Partnered closely with Senior Operations Manager to
+                                        ensure warehouse operations were met, and to research areas of improvement.
+                                    </li>
+                                    <li class="list-group-item">Maintained daily timesheets and personal information
+                                        records for over 300 Tilly’s Associates at the online and distribution
+                                        warehouses.
+                                    </li>
+                                    <li class="list-group-item">Updated and maintained Cost per Unit, Fiscal Forecast,
+                                        and Unit Per Hour reports.</li>
+                                </ul>
                             </div>
                         </div>
                         <div class="row card">
                             <div class="col card-body">
                                 <h5 class="card-title">Model Match</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Data Entry</h6>
-                                <p class="card-text">Stuff about position</p>
+                                <h6 class="card-subtitle mb-2 text-muted">Data Entry | Sept. 2016 - Feb. 2017</h6>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Created and maintained a database of 1000s prospective
+                                        clients, gathering contact and other necessary information.
+                                    </li>
+                                    <li class="list-group-item">Directly sourced potential clients of Bank and Mortgage
+                                        executives through independent research.
+                                    </li>
+
+                                </ul>
                             </div>
                         </div>
                         <div class="row card">
                             <div class="col card-body">
                                 <h5 class="card-title">19 Sports Bar & Grill</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Server</h6>
-                                <p class="card-text">Stuff about position</p>
+                                <h6 class="card-subtitle mb-2 text-muted">Server | March 2016 - Sept. 2016</h6>
+                                <li class="list-group-item">Greet and served guests with beverages and food in the
+                                    restaurant.
+                                </li>
+                                <li class="list-group-item">Properly informed guests of upcoming events in the
+                                    restaurant, golf course, and driving range to promote further guest engagement and
+                                    satisfaction.
+                                </li>
+                                <li class="list-group-item">Partnered on a team of 12 hospitality team members to
+                                    maintain orderly workstations as well as keep a sanitary dining area.
+                                </li>
+                            </div>
+                        </div>
+                        <div class="row card">
+                            <div class="col card-body">
+                                <h5 class="card-title">The Darkroom.com</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Production Crew | May 2015 - Dec. 2015</h6>
+                                <li class="list-group-item">Developed and processed film using specified machinery to
+                                    apply editing and color corrections to photos.
+                                </li>
+                                <li class="list-group-item">Used Adobe Photoshop and Illustrator to color correct and
+                                    remove imperfections for large prints and special items such as metallic prints and
+                                    calendars.
+                                </li>
+                                <li class="list-group-item">Rotated, maintained, and tracked stocked warehouse supplies.
+                                </li>
                             </div>
                         </div>
                     </div>
@@ -198,6 +244,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v5.9.0/js/all.js" data-auto-replace-svg="nest"></script>
     <script src="assets/js/index.js"></script>
 
 </body>
