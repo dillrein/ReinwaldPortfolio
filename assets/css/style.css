@@ -10,6 +10,13 @@ body{
 
 }
 
+hr {
+    margin: 0 auto;
+    border: 0;
+    border-top: 1px solid white;
+    width: 75%;
+  
+  }
 
 nav{
     padding: 5px;
@@ -134,37 +141,47 @@ ul li a:hover:before{
     transform: translate(-50%,-50%);
 
 }
+.row{
+    justify-content: center;
+}
 
 .flip{
     cursor: pointer;
-    width: 340px;
-    height: 480px;
+    max-width: 340px;
+    height: 600px;
+    
 
 }
 
 .front, .back{
     width: 90%;
-    /* height: 50%; */
+    height: 50%;
     overflow: hidden;
     backface-visibility: hidden;
     position: absolute;
     transition: transform .6s linear;
 }
 .front{
+    color: #4e5355;
     transform: perspective(600px) rotateY(0deg);
+    margin:0 auto;
 }
 .back{
-    background: #f1f1f1;
-    transform: perspective(600px) rotateY(180deg);
+    background: #4e5355;
+    transform: perspective(600px) rotateY(-180deg);
 }
 .back-content{
-    color: #2c3e50;
+    color:#76c3e4;
     text-align: center;
     width: 100%;
 }
 .flip:hover > .front{
-    transform: perspective(600px) rotateY(-180deg); 
+    transform: perspective(600px) rotateY(180deg); 
 }
 .flip:hover > .back{
     transform: perspective(600px) rotateY(0deg);
+}
+
+.icon{
+    size: 7px;
 }
