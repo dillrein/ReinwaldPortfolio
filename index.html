@@ -8,7 +8,8 @@
     <link rel='icon' href='assets/images/mtn2.JPG' type='image/x-icon' />
     <title>Reinwald Resume</title>
 
-
+    <link rel="stylesheet"
+        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -53,40 +54,40 @@
             <div id="carousel" class="carousel slide carousel-fade p-3 mb-5 rounded" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./assets/images/family.jpg" class="d-block w-100" alt="...">
+                        <img src="./assets/images/family.jpg" class="d-block w-100" alt="family">
                         <div class="carousel-caption ">
                             Family
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="./assets/images/flatirons.jpg" class="d-block w-100" alt="...">
+                        <img src="./assets/images/flatirons.jpg" class="d-block w-100" alt="flatirons">
                         <div class="carousel-caption ">
                             Explorer
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="./assets/images/skateboardone.jpg" class="d-block w-100" alt="...">
+                        <img src="./assets/images/skateboardone.jpg" class="d-block w-100" alt="skateboard">
                         <div class="carousel-caption ">
                             Meditative
                         </div>
 
                     </div>
                     <div class="carousel-item">
-                        <img src="./assets/images/snowboard.jpg" class="d-block w-100" alt="...">
+                        <img src="./assets/images/snowboard.jpg" class="d-block w-100" alt="snowboard">
                         <div class="carousel-caption ">
                             Proactive
                         </div>
 
                     </div>
                     <div class="carousel-item">
-                        <img src="./assets/images/icecream.jpg" class="d-block w-100" alt="...">
+                        <img src="./assets/images/icecream.jpg" class="d-block w-100" alt="icecream">
                         <div class="carousel-caption ">
                             Balanced
                         </div>
 
                     </div>
                     <div class="carousel-item">
-                        <img src="./assets/images/skateboardstairs.jpg" class="d-block w-100" alt="...">
+                        <img src="./assets/images/skateboardstairs.jpg" class="d-block w-100" alt="stairs">
                         <div class="carousel-caption ">
                             Outgoing
                         </div>
@@ -103,15 +104,9 @@
                 </a>
             </div>
         </div>
-
-        <!-- education  -->
-
-
-        <!-- experience  -->
-
         <!-- projects  -->
         <br>
-        <div id="projects" class="row">
+        <div id="projects" class="container-fluid row">
             <div class="col-sm-4 flip">
                 <div class="card text-center front">
                     <i class="fas fa-dice fa-6x"></i>
@@ -167,8 +162,97 @@
                     </div>
                 </div>
             </div>
-        </div>
+            <div id="devicons" class="container row">
+                <ul>
+                    <li>
+                        <i class="devicon-javascript-plain"></i>
+                    </li>
+                    <li>
+                        <i class="devicon-java-plain-wordmark"></i>
+                    </li>
+                    <li>
+                        <i class="devicon-jquery-plain-wordmark"></i>
+                    </li>
+                    <li>
+                        <i class="devicon-mysql-plain-wordmark"></i>
+                    </li>
+                    <li>
+                        <i class="devicon-nodejs-plain-wordmark"></i>
+                    </li>
+                    <li>
+                        <i class="devicon-react-original-wordmark"></i>
+                    </li>
+                    <li>
+                        <i class="devicon-mongodb-plain-wordmark"></i>
+                    </li>
+                    <li>
+                        <i class="devicon-express-original-wordmark"></i>
+                    </li>
+                    <li>
+                        <i class="devicon-html5-plain-wordmark"></i>
+                    </li>
+                    <li>
+                        <i class="devicon-css3-plain-wordmark"></i>
+                    </li>
+                    <li>
+                        <i class="devicon-bootstrap-plain"></i>
+                    </li>
+                    <li>
+                        <i class="devicon-photoshop-line"></i>
+                    </li>
+                </ul>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+        <!-- education  -->
+
+
+        <!-- experience  -->
+
+        <!-- contact -->
+
+        <div id="contact" class="container-fluid row">
+            <form class="col-sm-6">
+                <div class="form">
+                    <div class="form-group ">
+                        <label for="inputName">Name</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="First">
+                    </div>
+                    <div class="form-group ">
+                        <label for="inputLast">Last</label>
+                        <input type="text" class="form-control" id="inputLast" placeholder="Last">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Emailme@gmail.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <div class="col-sm-6">
+                <img src="./assets/images/view2.jpg" class="d-block w-100" alt="mtn">
+
+            </div>
+        </div>
+        </div>
     </main>
 
 

@@ -185,3 +185,8 @@ ul li a:hover:before{
 .icon{
     size: 7px;
 }
+
+#devicons{
+    size: 100px;
+    color: white;
+}
