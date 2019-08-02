@@ -37,21 +37,21 @@ nav{
     
 }
 
-ul{
+#navBar{
     margin: 0;
     padding: 0;
     display: flex;
     text-decoration: none;
 }
 
-ul li{
+#navBar> li{
     list-style: none;
     margin: 0 20px;
     transition: 0.5s;
     text-decoration: none;
 }
 
-ul li a{
+#navBar> li a{
     display: block;
     position: relative;
     text-decoration: none;
@@ -64,21 +64,21 @@ ul li a{
     transition: 0.5s;
 }
 
-ul:hover li a{
+#navBar:hover li a{
     transform: scale(1.5);
     opacity: 0.2;
     filter: blur(5px);
     text-decoration: none;
 }
 
-ul li a:hover{
+#navBar li a:hover{
     transform: scale(2);
     opacity: 0.7;
     filter: blur(0);
     text-decoration: none;
 }
 
-ul li a:before{
+#navBar li a:before{
     content:"";
     position: absolute;
     top: 0;
@@ -93,7 +93,7 @@ ul li a:before{
     text-decoration: none;
 }
 
-ul li a:hover:before{
+#navBar li a:hover:before{
     transition: transform 0.5s;
     transform-origin: left;
     transform: scaleX(1);
@@ -148,9 +148,13 @@ ul li a:hover:before{
 .flip{
     cursor: pointer;
     max-width: 340px;
-    height: 600px;
+    min-height: 300px;
     
 
+}
+
+.card.text-center.front, .card.text-center.back{
+    min-height: 300px;
 }
 
 .front, .back{
@@ -187,6 +191,12 @@ ul li a:hover:before{
 }
 
 #devicons{
+    max-height: 100px;
+    min-height: 100px;
     size: 100px;
     color: white;
+}
+#devicons>ul>li>i{
+    width: 100px;
+    height: 100px;
 }
