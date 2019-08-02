@@ -1,3 +1,6 @@
+*{
+    box-sizing: inherit;
+}
 body{
     margin: 0;
     padding: 0;
@@ -195,8 +198,28 @@ nav{
     min-height: 100px;
     size: 100px;
     color: white;
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
 }
-#devicons>ul>li>i{
+#devicons>li{
     width: 100px;
     height: 100px;
+    padding: 10px;
+}
+
+#devicons>li>i{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    height: 100px;
+    width: 100px;
+    font-size: 5rem;
+}
+
+
+#devicons>li> i:hover {
+    color:#76c3e4;
 }
