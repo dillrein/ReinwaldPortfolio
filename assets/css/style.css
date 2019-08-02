@@ -10,7 +10,7 @@ body{
     position: relative;
     background-attachment: fixed;
     font-family: Arial, Helvetica, sans-serif;
-
+    color: white;
 }
 
 hr {
@@ -223,3 +223,5 @@ nav{
 #devicons>li> i:hover {
     color:#76c3e4;
 }
+
+
