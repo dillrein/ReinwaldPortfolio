@@ -181,7 +181,7 @@ nav{
 .back-content{
     color:#76c3e4;
     text-align: center;
-    width: 100%;
+    
 }
 .flip:hover > .front{
     transform: perspective(600px) rotateY(180deg); 
@@ -200,7 +200,7 @@ nav{
     size: 100px;
     color: white;
     list-style-type: none;
-    margin: 10px;
+    margin:  15px;
     padding: 10px;
     overflow: hidden;
     display: flex;

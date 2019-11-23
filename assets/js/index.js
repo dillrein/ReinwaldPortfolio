@@ -14,3 +14,21 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+
+
+
+// create 3 objects
+// one object for each modal to be populated
+// 
+
+//create modal, call objects to fill
+function modalProject(){
+  //create modal
+
+  //based on which modal clicked create specfic modal
+
+  //pop up for going to external link warning
+
+  //close modal
+}
