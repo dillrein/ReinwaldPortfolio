@@ -194,6 +194,14 @@ nav{
     size: 7px;
 }
 
+.iconCustom{
+    padding-top: 25%;
+}
+
+#skills{
+    margin-top: 35px;
+}
+
 #devicons{
     max-height: 100px;
     min-height: 100px;
@@ -237,4 +245,10 @@ nav{
   
 #topButton:hover {
     color: #76c3e4;
+}
+
+.footer{
+    margin: 0;
+    text-align: center;
+
 }

@@ -42,9 +42,9 @@
         <div id="MainNav" class="container-fluid align-middle">
             <ul id="navBar">
                 <li><a href="#aboutMe">About Me</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
             </ul>
 
         </div>
@@ -104,18 +104,19 @@
                 </a>
             </div>
         </div>
+
         <!-- projects  -->
         <br>
         <div id="projects" class="container-fluid row">
             <div class="col-sm-4 flip">
                 <div class="card text-center front">
-                    <i class="fas fa-dice fa-6x"></i>
+                    <i class="fas fa-dice fa-6x iconCustom"></i>
                     <div>Number Guess Game</div>
                     <br>
-                    <ul class="list-group list-group-flush">
+                    <!-- <ul class="list-group list-group-flush">
                         <li class="list-group-item">Bootstrap</li>
                         <li class="list-group-item">jQuery</li>
-                    </ul>
+                    </ul> -->
                 </div>
                 <div class="card text-center back">
                     <div class="card-body back-content">
@@ -127,14 +128,14 @@
             </div>
             <div class="col-sm-4 flip">
                 <div class="card text-center front">
-                    <i class="fas fa-music fa-6x"></i>
+                    <i class="fas fa-music fa-6x iconCustom"></i>
                     <div>myo͞ozik</div>
                     <br>
-                    <ul class="list-group list-group-flush">
+                    <!-- <ul class="list-group list-group-flush">
                         <li class="list-group-item">HTML & CSS</li>
                         <li class="list-group-item">Javascript</li>
                         <li class="list-group-item">Front End APIs</li>
-                    </ul>
+                    </ul> -->
                 </div>
                 <div class="card text-center back">
                     <div class="card-body back-content">
@@ -146,13 +147,13 @@
             </div>
             <div class="col-sm-4 flip">
                 <div class="card text-center front">
-                    <i class="icon fas fa-server fa-6x"></i>
+                    <i class="icon fas fa-server fa-6x iconCustom"></i>
                     <div>MySQL-Bamazon</div>
                     <br>
-                    <ul class="list-group list-group-flush">
+                    <!-- <ul class="list-group list-group-flush">
                         <li class="list-group-item">MySQL</li>
                         <li class="list-group-item">Javascript</li>
-                    </ul>
+                    </ul> -->
                 </div>
                 <div class="card text-center back">
                     <div class="card-body back-content">
@@ -162,8 +163,7 @@
                     </div>
                 </div>
             </div>
-            <br>
-            <div class="container row">
+            <div id="skills" class="container row">
                 <ul id="devicons">
                     <li>
                         <i class="devicon-react-original-wordmark"></i>
@@ -175,37 +175,38 @@
                         <i class="devicon-mongodb-plain-wordmark"></i>
                     </li>
                     <li>
-                        <i class="devicon-mysql-plain-wordmark"></i>
+                        <i class="devicon-jquery-plain-wordmark"></i>
                     </li>
+                </ul>
+            </div>
+
+            <div class="container row">
+                <ul id="devicons">
                     <li>
                         <i class="devicon-html5-plain-wordmark"></i>
                     </li>
                     <li>
                         <i class="devicon-javascript-plain"></i>
-
                     </li>
-                    <!-- middle -->
                     <li>
                         <i class="devicon-photoshop-line"></i>
-
-                    </li>
-                    <li>
-                        <i class="devicon-bootstrap-plain"></i>
-
                     </li>
                     <li>
                         <i class="devicon-css3-plain-wordmark"></i>
-                    <li>
+                    </li>
+                </ul>
+            </div>
 
+            <div class="container row">
+                <ul id="devicons">
+                    <li>
                         <i class="devicon-nodejs-plain-wordmark"></i>
                     </li>
                     <li>
                         <i class="devicon-express-original-wordmark"></i>
                     </li>
                     <li>
-                        <i class="devicon-jquery-plain-wordmark"></i></li>
-                    <li>
-                        <i class="devicon-github-plain-wordmark"></i>
+                        <i class="devicon-mysql-plain-wordmark"></i>
                     </li>
                 </ul>
             </div>
@@ -218,47 +219,42 @@
         <!-- contact -->
 
         <div id="contact" class="container-fluid row">
-            <form class="col-sm-6">
-                <div class="form">
-                    <div class="form-group ">
-                        <label for="inputName">Name</label>
-                        <input type="text" class="form-control" id="inputName" placeholder="First">
-                    </div>
-                    <div class="form-group ">
-                        <label for="inputLast">Last</label>
-                        <input type="text" class="form-control" id="inputLast" placeholder="Last">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="inputEmail">Email</label>
-                    <input type="email" class="form-control" id="inputEmail" placeholder="Emailme@gmail.com">
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea class="form-control" id="message" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-            <div class="col-sm-6">
-                <img src="./assets/images/view2.jpg" class="d-block w-100" alt="mtn">
-
+            <div class="card fluid">
+                <p>contact card test test</p>
+                <h6> Lets get in touch</h6>
             </div>
         </div>
-        </div>
+        
     </main>
 
-
+<i onclick="topFunction()" id="topButton" title="Go to top" class="far fa-arrow-alt-circle-up"></i>
 
     <footer>
-        <div class="footer is-centered">
-            <p>Created, Developed, Cried over by Dillon Reinwald</p>
+        <div class="footer navbar-light navbar-static-bottom shadow-sm p-3 bg-white text-muted">
+            <div class="row">
+                <div class="col">
+                    <p>Created, Developed, Cried over by Dillon Reinwald</p>      
+                </div>
+                <div class="col">
+                    <p>
+                        <a href="linkedinshit" target="_blank">Linkedin</a>
+                    </p>
+                </div>
+                <div class="col">
+                    <p>
+                        <a href="github" target="_blank">Github</a>
+                    </p>
+                </div>
+            </div>
+            
+            
+            
         </div>
     </footer>
 
 
 
-    <i onclick="topFunction()" id="topButton" title="Go to top" class="far fa-arrow-alt-circle-up"></i>
+    
 
 
 
