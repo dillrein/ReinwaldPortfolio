@@ -247,6 +247,11 @@ nav{
     color: #76c3e4;
 }
 
+
+.modal-content{
+    background-color: black;
+}
+
 .footer{
     margin: 0;
     text-align: center;
