@@ -15,6 +15,7 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
 </head>
 
 <body>
@@ -48,6 +49,10 @@
             </ul>
 
         </div>
+
+        <br>
+        <br>
+        <br>
 
         <!-- about me -->
         <div id="aboutMe" class="container">
@@ -105,8 +110,11 @@
             </div>
         </div>
 
-        <!-- projects  -->
         <br>
+        <br>
+        <br>
+
+        <!-- projects  -->
         <div id="projects" class="container-fluid row">
             <div class="col-sm-4 flip">
                 <div class="card text-center front">
@@ -163,62 +171,71 @@
                     </div>
                 </div>
             </div>
-            <div id="skills" class="container row">
-                <ul id="devicons">
-                    <li>
-                        <i class="devicon-react-original-wordmark"></i>
-                    </li>
-                    <li>
-                        <i class="devicon-java-plain-wordmark"></i>
-                    </li>
-                    <li>
-                        <i class="devicon-mongodb-plain-wordmark"></i>
-                    </li>
-                    <li>
-                        <i class="devicon-jquery-plain-wordmark"></i>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="container row">
-                <ul id="devicons">
-                    <li>
-                        <i class="devicon-html5-plain-wordmark"></i>
-                    </li>
-                    <li>
-                        <i class="devicon-javascript-plain"></i>
-                    </li>
-                    <li>
-                        <i class="devicon-photoshop-line"></i>
-                    </li>
-                    <li>
-                        <i class="devicon-css3-plain-wordmark"></i>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="container row">
-                <ul id="devicons">
-                    <li>
-                        <i class="devicon-nodejs-plain-wordmark"></i>
-                    </li>
-                    <li>
-                        <i class="devicon-express-original-wordmark"></i>
-                    </li>
-                    <li>
-                        <i class="devicon-mysql-plain-wordmark"></i>
-                    </li>
-                </ul>
-            </div>
         </div>
 
+        <br>
+        <br>
+        <br>
+
+        <!-- SKILLS -->
+        <div id="skills" class="container row">
+            <ul id="devicons">
+                <li>
+                    <i class="devicon-react-original-wordmark"></i>
+                </li>
+                <li>
+                    <i class="devicon-java-plain-wordmark"></i>
+                </li>
+                <li>
+                    <i class="devicon-mongodb-plain-wordmark"></i>
+                </li>
+                <li>
+                    <i class="devicon-jquery-plain-wordmark"></i>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container row">
+            <ul id="devicons">
+                <li>
+                    <i class="devicon-html5-plain-wordmark"></i>
+                </li>
+                <li>
+                    <i class="devicon-javascript-plain"></i>
+                </li>
+                <li>
+                    <i class="devicon-photoshop-line"></i>
+                </li>
+                <li>
+                    <i class="devicon-css3-plain-wordmark"></i>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container row">
+            <ul id="devicons">
+                <li>
+                    <i class="devicon-nodejs-plain-wordmark"></i>
+                </li>
+                <li>
+                    <i class="devicon-express-original-wordmark"></i>
+                </li>
+                <li>
+                    <i class="devicon-mysql-plain-wordmark"></i>
+                </li>
+            </ul>
+        </div>
+        </div>
+
+
+        
         <!-- project modals -->
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
             Modal button test
         </button>
 
-        <div class="modal fade" id="staticBackdrop" tabindex="-1" role="dialog"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade" id="staticBackdrop" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel"
+            aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -229,11 +246,24 @@
                     </div>
                     <div class="modal-body">
                         <div class="row">
-                            <div class="col">
-                                <p>col1</p>
+                            <div class="col border border-info">
+                                <div class="row border border-danger">
+                                    <img src="./assets/images/mtn.JPG" class="d-block w-100" alt="modalPicOne">
+                                </div>
+                                <div class="row border border-secondary">
+                                    <img src="./assets/images/mtn.JPG" class="d-block w-100" alt="modalPicOne">
+                                </div>
                             </div>
-                            <div class="col">
-                                    <p>col1</p>
+                            <div class="col border border-warning">
+                                <div class="row border border-dark">
+                                    <p>row 1</p>
+                                </div>
+                                <div class="row border border-primary">
+                                    <p>row 2</p>
+                                </div>
+                                <div class="row border border-light">
+                                    <p>row 3</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -244,13 +274,12 @@
                 </div>
             </div>
         </div>
-        <!-- education  -->
 
-
-        <!-- experience  -->
+        <br>
+        <br>
+        <br>
 
         <!-- contact -->
-
         <div id="contact" class="container-fluid row">
             <div class="card fluid">
                 <p>contact card test test</p>
@@ -260,8 +289,13 @@
 
     </main>
 
+
+    <!-- Top button -->
     <i onclick="topFunction()" id="topButton" title="Go to top" class="far fa-arrow-alt-circle-up"></i>
 
+
+
+    <!-- footer -->
     <footer>
         <div class="footer navbar-light navbar-static-bottom shadow-sm p-3 bg-white text-muted">
             <div class="row">
