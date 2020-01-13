@@ -18,9 +18,7 @@ function topFunction() {
 
 
 
-// create 3 objects
-// one object for each modal to be populated
-// 
+
 
 //create modal, call objects to fill
 function modalProject(){
