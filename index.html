@@ -8,6 +8,8 @@
     <link rel='icon' href='assets/images/mtn2.JPG' type='image/x-icon' />
     <title>Reinwald Resume</title>
 
+
+
     <link rel="stylesheet"
         href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
@@ -16,6 +18,7 @@
 
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/modal.css">
+
 </head>
 
 <body>
@@ -44,7 +47,7 @@
             <ul id="navBar">
                 <li><a href="#aboutMe">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
+                <!-- <li><a href="#experience">Experience</a></li> -->
                 <li><a href="#skills">Skills</a></li>
             </ul>
 
@@ -170,9 +173,9 @@
         <br>
         <br>
 
-        <!-- SKILLS -->
-        <div id="skills" class="container-fluid">
-            <div class="container-fluid row">
+        <!-- skills -->
+        <div id="skills">
+            <div class="container row">
                 <ul id="devicons">
                     <li>
                         <i class="devicon-react-original-wordmark"></i>
@@ -189,7 +192,7 @@
                 </ul>
             </div>
 
-            <div class="container-fluid row">
+            <div class="container row">
                 <ul id="devicons">
                     <li>
                         <i class="devicon-html5-plain-wordmark"></i>
@@ -206,7 +209,7 @@
                 </ul>
             </div>
 
-            <div class="container-fluid row">
+            <div class="container row">
                 <ul id="devicons">
                     <li>
                         <i class="devicon-nodejs-plain-wordmark"></i>
@@ -223,13 +226,12 @@
 
 
 
-
         <!-- project modals -->
-        <button type="button" class="btn btn-primary" data-toggle="modal">
-            <a href="assets/modals/modalOne.html" rel="modal:open">test button</a>
+        <button type="button" class="btn btn-primary" href="./assets/modals/modal1.html">
+            Modal button test
         </button>
 
-        
+
 
         <br>
         <br>
@@ -245,9 +247,9 @@
 
     </main>
 
+    <!-- scroll to top button -->
+    <a id="topButton"></a>
 
-    <!-- Top button -->
-    <i onclick="topFunction()" id="topButton" title="Go to top" class="far fa-arrow-alt-circle-up"></i>
 
 
 
@@ -281,11 +283,8 @@
 
 
 
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>

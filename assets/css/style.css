@@ -208,7 +208,7 @@ nav{
     size: 100px;
     color: white;
     list-style-type: none;
-    margin: 10px;
+    margin:  15px;
     padding: 10px;
     overflow: hidden;
     display: flex;
@@ -237,14 +237,40 @@ nav{
     position: fixed; 
     bottom: 20px; 
     right: 30px; 
-    z-index: 99; 
-    cursor: pointer; 
+    z-index: 1000; 
     padding: 15px; 
-    font-size: 35px; 
+    font-size: 35px;
+    transition: 
+        background-color .3s, 
+        opacity .5s,
+        visibility .5s;
+    visibility: hidden; 
+    opacity: 0;
 }
-  
+
+#topButton::after{
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#topButton.show{
+    opacity: 1;
+    visibility: visible;
+}
+
+#topButton:active {
+    background-color: #555;
+  }
+
+
 #topButton:hover {
     color: #76c3e4;
+    cursor: pointer;
 }
 
 .footer{
