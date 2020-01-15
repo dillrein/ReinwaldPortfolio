@@ -15,8 +15,15 @@
 //   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 // }
 
+$('.projectModals').on('click', function(e){
+  e.preventDefault();
+  console.log("modal button clicked displaying now")
+  $('#theModal').modal('show').find('.modal-content').load($(this).attr('href'));
+});
 
 
+
+// scroll back top top button functions
 var btn = $('#topButton');
 
 $(window).scroll(function(){

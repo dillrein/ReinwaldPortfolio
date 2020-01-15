@@ -238,8 +238,8 @@ nav{
     bottom: 20px; 
     right: 30px; 
     z-index: 1000; 
-    padding: 15px; 
-    font-size: 35px;
+    /* padding: 15px;  */
+    font-size: 12px;
     transition: 
         background-color .3s, 
         opacity .5s,
@@ -255,7 +255,7 @@ nav{
     font-style: normal;
     font-size: 2em;
     line-height: 50px;
-    color: #fff;
+    color: #76c3e4;
 }
 
 #topButton.show{
@@ -264,12 +264,11 @@ nav{
 }
 
 #topButton:active {
-    background-color: #555;
+    color: #76c3e4;
   }
 
 
 #topButton:hover {
-    color: #76c3e4;
     cursor: pointer;
 }
 
