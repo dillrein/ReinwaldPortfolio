@@ -31,7 +31,7 @@ nav{
     opacity: 0.3; 
 }
 
-#MainNav{
+.MainNav{
     margin: 0;
     padding: 0;
     display: flex;
@@ -44,7 +44,8 @@ nav{
 #navBar{
     margin: 0;
     padding: 0;
-    display: flex;
+    /* display: flex; */
+    text-align: center;
     text-decoration: none;
 }
 
@@ -59,7 +60,7 @@ nav{
     display: block;
     position: relative;
     text-decoration: none;
-    padding: 5px;
+    padding: 10px;
     font-size: 22px;
     letter-spacing: 10px;
     font-family: Arial, Helvetica, sans-serif;
