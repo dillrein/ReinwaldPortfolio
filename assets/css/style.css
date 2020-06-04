@@ -7,49 +7,72 @@ body{
     padding: 0;
     background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
     background-attachment: fixed;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
+    z-index: -100;
+    
 }
 
-.side{
+#landingPage{
+    background-image: url("../images/benchMe.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
+}
+
+.sideNav{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
 
 }
 
-.side a{
-    background: #82ccdd;
-    color: white;
+.sideNav a{
+    background: white;
+    color: #82ccdd;
     font-size: 22px;
     display: block;
     width: 130px;
     padding: 12px;
     text-decoration: none;
     margin: 8px;
-    color: white;
     border-radius: 6px;
     margin-left: -100px;
     transition: 0.6s all;
 }
 
-.side a:hover{
+.sideNav a:hover{
     margin-left: 0;
 }
 
 #Title {
    position: absolute;
    top: 20%;
-   left: 20%;
+   right: 5%;
+   align-items: center;
 }
 
 #Title .information{
-    text-align: center;
-    margin-top: 25%;
+    text-align: right;
+    margin-top: 20%;
 }
 
-#Title img{
+#Title .information .infoText:hover{
+    color:  #82ccdd;
+    text-shadow: black;
+}
+
+#Title .information h2{
+    text-transform: uppercase;
+}
+
+#Title .row img{
     max-height: 125vh;
     max-width: 50vh;
-
+    border-radius: 100px;
 }
+
+/* .navbar-brand{
+    
+} */
