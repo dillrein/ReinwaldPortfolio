@@ -13,6 +13,30 @@ body{
     
 }
 
+
+.nav-link{
+    color: #82ccdd;
+    font-size: 18px;
+    margin: 0px 20px 0px 20px;
+    
+}
+
+nav .active{
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+
+#headerRight{
+    color: #82ccdd;
+    font-size: 25px;
+    margin: 0px 20px 0px 20px;
+    
+}
+
 #landingPage{
     background-image: url("../images/benchMe.JPG");
     background-repeat: no-repeat;
@@ -73,6 +97,3 @@ body{
     border-radius: 100px;
 }
 
-/* .navbar-brand{
-    
-} */
