@@ -13,6 +13,9 @@ body{
     
 }
 
+nav{
+    margin-bottom: 10px;
+}
 
 .nav-link{
     color: #82ccdd;
@@ -29,6 +32,13 @@ nav .active{
     color: white;
 }
 
+.navbar-toggler{
+    color:#82ccdd;
+}
+
+.navbar-toggler :hover{
+    color:white;
+}
 
 #headerRight{
     color: #82ccdd;
