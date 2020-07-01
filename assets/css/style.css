@@ -2,6 +2,7 @@
     box-sizing: inherit;
     scroll-behavior: smooth;
 }
+
 body{
     margin: 0;
     padding: 0;
@@ -10,100 +11,57 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
     z-index: -100;
-    
 }
 
-nav{
-    margin-bottom: 10px;
+navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-.nav-link{
-    color: #82ccdd;
-    font-size: 18px;
-    margin: 0px 20px 0px 20px;
-    
+ul{
+    position: relative;
+    display: flex;
+    flex-direction: row;
 }
 
-nav .active{
-    font-weight: bold;
+ul li{
+    list-style: none;
 }
 
-.nav-link:hover{
-    color: white;
-}
-
-.navbar-toggler{
-    color:#82ccdd;
-}
-
-.navbar-toggler :hover{
-    color:white;
-}
-
-#headerRight{
-    color: #82ccdd;
-    font-size: 25px;
-    margin: 0px 20px 0px 20px;
-    
-}
-
-#landingPage{
-    background-image: url("../images/benchMe.JPG");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+ul li a{
+    position: relative;
+    display: inline-block;
+    padding: 6px 15px;
+    text-decoration: none;
+    color: #fff;
+    background: #2196f3;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    overflow: hidden;
+    transition: 0.5s;
     z-index: 1;
 }
+ul:hover li a{
+    opacity: 0;
+}
 
-.sideNav{
+ul li a:hover{
+    transform: scale(1.4);
+    z-index: 1000;
+    background: #ff3f81;
+    opacity: 1;
+}
+
+ul li a:before{
+    content: '';
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+    transform: skewX(35deg);
+    transition: 0s;
 }
-
-.sideNav a{
-    background: white;
-    color: #82ccdd;
-    font-size: 22px;
-    display: block;
-    width: 130px;
-    padding: 12px;
-    text-decoration: none;
-    margin: 8px;
-    border-radius: 6px;
-    margin-left: -100px;
-    transition: 0.6s all;
-}
-
-.sideNav a:hover{
-    margin-left: 0;
-}
-
-#Title {
-   position: absolute;
-   top: 20%;
-   right: 5%;
-   align-items: center;
-}
-
-#Title .information{
-    text-align: right;
-    margin-top: 20%;
-}
-
-#Title .information .infoText:hover{
-    color:  #82ccdd;
-    text-shadow: black;
-}
-
-#Title .information h2{
-    text-transform: uppercase;
-}
-
-#Title .row img{
-    max-height: 125vh;
-    max-width: 50vh;
-    border-radius: 100px;
-}
-
