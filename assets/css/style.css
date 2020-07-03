@@ -1,5 +1,5 @@
 *{
-    box-sizing: inherit;
+    /* box-sizing: inherit; */
     scroll-behavior: smooth;
 }
 
@@ -8,11 +8,11 @@ body{
     padding: 0;
     background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
     background-attachment: fixed;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Poppins', sans-serif;
     color: white;
     z-index: -100;
 }
-
+/* landing navbar */
 navbar{
     display: flex;
     justify-content: center;
@@ -20,18 +20,18 @@ navbar{
     min-height: 100vh;
 }
 
-ul{
+#LandingUL{
     position: relative;
     display: flex;
     flex-direction: row;
 }
 
-ul li{
+#LandingUL li{
     list-style: none;
     padding: 0px 10px;
 }
 
-ul li:before{
+#LandingUL li:before{
     content: attr(data-text);
     position: absolute;
     top: 50%;
@@ -47,12 +47,12 @@ ul li:before{
     white-space: nowrap;
 }
 
-ul li:hover:before{
+#LandingUL li:hover:before{
     opacity: 0.05;
     letter-spacing: 0px;
 }
 
-ul li a{
+#LandingUL li a{
     position: relative;
     display: inline-block;
     padding: 6px 15px;
@@ -65,18 +65,18 @@ ul li a{
     transition: 0.5s;
     z-index: 1;
 }
-ul:hover li a{
+#LandingUL:hover li a{
     opacity: 0;
 }
 
-ul li a:hover{
+#LandingUL li a:hover{
     transform: scale(1.4);
     z-index: 1000;
     background: #ff3f81;
     opacity: 1;
 }
 
-ul li a:before{
+#LandingUL li a:before{
     content: '';
     position: absolute;
     top: 0;
@@ -88,8 +88,25 @@ ul li a:before{
     transition: 0s;
 }
 
-ul li a:hover:before{
+#LandingUL li a:hover:before{
     left: calc(100% + 100px);
     transition: 0.5s;
     transition-delay: 0.2s;
 }
+
+header{
+    opacity: 0.8;
+    z-index: 10;
+}
+header nav span{
+    pointer-events: none;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #2196f3;
+}
+
+#AboutMe{
+    color: black;
+}
+

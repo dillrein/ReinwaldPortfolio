@@ -13,6 +13,7 @@
     <link rel="stylesheet"
         href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
@@ -21,13 +22,40 @@
 </head>
 
 <body>
-    <navbar class="container-fluid">
-        <ul>
-            <li data-text="Home">
-                <a href="#"> Home </a>
-            </li>
+
+    <header>
+        <nav id="Navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Dillon Reinwald</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <span class="navbar-text">
+                Full Stack Web Developer
+            </span>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <navbar id="LandingNav" class="container-fluid">
+        <ul id="LandingUL">
             <li data-text="About Me">
-                <a href="#"> About Me </a>
+                <a href="#AboutMe"> About Me </a>
             </li>
             <li data-text="Projects">
                 <a href="#"> Projects </a>
@@ -35,9 +63,21 @@
             <li data-text="Skills">
                 <a href="#"> Skills </a>
             </li>
+            <li data-text="Resume">
+                <a href="#"> Resume </a>
+            </li>
         </ul>
 
     </navbar>
+
+    
+
+    </div>
+
+    <div id="AboutMe" class="row">
+        <div class="card col"> Text box </div>
+        <div class="card col"> Picture box </div>
+    </div>
 
 
 
