@@ -1,11 +1,13 @@
 // navbar hide and show
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("NavbarMain").style.top = "-50px";
-  } else {
-    document.getElementById("NavbarMain").style.top = "0px";
-  }
-  prevScrollpos = currentScrollPos;
-}
+(function($) {          
+  $(document).ready(function(){                    
+      $(window).scroll(function(){        
+                          //after x distance from top fades in, otherwise fade out 
+          if ($(this).scrollTop() > 400) {
+              $('#Navbar').fadeIn(500);
+          } else {
+              $('#Navbar').fadeOut(500);
+          }
+      });
+  });
+})(jQuery);
