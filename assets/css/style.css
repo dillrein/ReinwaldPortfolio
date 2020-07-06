@@ -94,6 +94,7 @@ navbar{
     transition-delay: 0.2s;
 }
 
+/* header navbar */
 header{
     opacity: 0.8;
     z-index: 10;
@@ -101,6 +102,7 @@ header{
     position: fixed;
     width: 100%;
 }
+
 header nav span{
     pointer-events: none;
 }
@@ -109,7 +111,66 @@ header nav span{
     color: #2196f3;
 }
 
+
+/* About Me */
+.aboutMeWrap{
+    background: rgba(192,192,192, 0.6);
+    margin-top: 50px;
+    
+}
+
 #AboutMe{
+    background-image: url("../images/benchMe.JPG"); /* The image used - important! */
+    background-size: cover;
+    position: relative; /* Needed to position the cutout text in the middle of the image */
+    height: 500px;
+    margin-top: 50px;
+    
+}
+
+.text {
+    background-color: white;
+    color: black;
+    font-size: 5vw; /* Responsive font size */
+    font-weight: bold;
+    margin: 0 auto; /* Center the text container */
+    padding: 10px;
+    width: 60%;
+    text-align: center; /* Center text */
+    position: absolute; /* Position text */
+    top: 50%; /* Position text in the middle */
+    left: 50%; /* Position text in the middle */
+    transform: translate(-50%, -50%); /* Position text in the middle */
+    mix-blend-mode: screen; /* This makes the cutout text possible */
+    opacity: 0.75;
+}
+
+#AboutMeInfo .container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+
+}
+
+.card{
+    display: flex;
+
+    color: black;
+    margin: 10px;
+
+}
+
+
+/* Projects */
+#Projects{
+    color: black;
+    min-height: 800px;
+}
+
+/* Skills */
+#Skills{
     color: black;
     min-height: 800px;
 }

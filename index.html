@@ -22,59 +22,90 @@
 </head>
 
 <body>
-
+    <!-- navbar (after scroll down) -->
     <header id="Navbar"">
-        <nav  class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Dillon Reinwald</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <span class="navbar-text">
-                Full Stack Web Developer
-            </span>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Resume</a>
-                    </li>
-                </ul>
-            </div>
+        <nav  class=" navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#LandingNav">Dillon Reinwald</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <span class="navbar-text">
+            Full Stack Web Developer
+        </span>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#AboutMe">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Resume">Resume</a>
+                </li>
+            </ul>
+        </div>
         </nav>
     </header>
 
+    <!-- landing navbar -->
     <navbar id="LandingNav" class="container-fluid">
         <ul id="LandingUL">
             <li data-text="About Me">
                 <a href="#AboutMe"> About Me </a>
             </li>
             <li data-text="Projects">
-                <a href="#"> Projects </a>
+                <a href="#Projects"> Projects </a>
             </li>
             <li data-text="Skills">
-                <a href="#"> Skills </a>
+                <a href="#Skills"> Skills </a>
             </li>
             <li data-text="Resume">
-                <a href="#"> Resume </a>
+                <a href="#Resume"> Resume </a>
             </li>
         </ul>
 
     </navbar>
 
-    
-
+    <br>
+    <br>
+    <!-- About Me -->
+    <div class="aboutMeWrap">
+        <br>
+        <div id="AboutMe" class="container">
+            <div class="text">Dillon Reinwald</div>
+        </div>
+        <div id="AboutMeInfo" class="row justify-content-center">
+            <div class="col-sm-4 ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quos dicta debitis numquam beatae
+                cumque dignissimos optio eius totam! Quod necessitat
+            </div>
+            <div class="col-sm-4 ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quos dicta debitis numquam beatae
+                cumque dignissimos optio eius totam! Quod necessitat
+            </div>
+        </div>
     </div>
 
-    <div id="AboutMe" class="row">
+
+    <br>
+    <br>
+    <br>
+
+    <div id="Projects" class="row">
+        <div class="card col"> Text box </div>
+        <div class="card col"> Picture box </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div id="Skills" class="row">
         <div class="card col"> Text box </div>
         <div class="card col"> Picture box </div>
     </div>
@@ -88,7 +119,8 @@
 
 
 
-    
+
+
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
