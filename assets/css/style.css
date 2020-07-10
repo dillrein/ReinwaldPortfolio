@@ -175,3 +175,29 @@ header nav span{
     min-height: 800px;
 }
 
+/* footer */
+
+footer{
+    background-color: grey;
+    padding-top: 10px;
+    
+}
+
+footer ul li{
+    display: flex;
+    justify-content: center;
+}
+
+.pointerEvent{
+    pointer-events: none;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+footer ul li a:hover{
+    text-decoration: none;
+    color: #2196f3;
+}
