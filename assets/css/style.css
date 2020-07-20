@@ -177,19 +177,66 @@ header nav span{
 
 .icons{
     display: flex;
-    font-size: 55px;
+    font-size: 70px;
     padding: 10px;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     align-content: center;
     justify-content: center;
+    transition:transform .25s ease;
 }
 
 .icons:hover{
     color: #2196f3;
-    font-size: 70px;
-    transition: 0.4s;
+    transform: scale(1.5);
+    overflow: hidden;
 }
+
+/* Back to Top Button */
+#BackToTop{
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 30px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s;
+    z-index: 1000;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#BackToTop:hover{
+    cursor: pointer;
+    background-color: #333;
+    
+}
+
+#BackToTop:active{
+    background-color: #ff3f81;
+}
+
+#BackToTop::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#BackToTop.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+
 /* footer */
 
 footer{
