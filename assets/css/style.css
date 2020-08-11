@@ -65,6 +65,7 @@ navbar{
     transition: 0.5s;
     z-index: 1;
 }
+
 #LandingUL:hover li a{
     opacity: 0;
 }
@@ -125,6 +126,7 @@ header nav span{
     position: relative; /* Needed to position the cutout text in the middle of the image */
     height: 500px;
     margin-top: 50px;
+    border-radius: 6px;
     
 }
 
@@ -143,6 +145,14 @@ header nav span{
     transform: translate(-50%, -50%); /* Position text in the middle */
     mix-blend-mode: screen; /* This makes the cutout text possible */
     opacity: 0.75;
+    border-radius: 6px;
+}
+
+.AboutMeInfoText{ 
+    margin: 12px;
+    background: rgba(252, 252, 252, 0.3);
+    border-radius: 10px;
+    
 }
 
 #AboutMeInfo .container{
@@ -150,13 +160,14 @@ header nav span{
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%) 
+    transform: translate(-50%, -50%);
+    margin: 10px; 
+    
 
 }
 
 .card{
     display: flex;
-
     color: black;
     margin: 10px;
 
@@ -226,7 +237,9 @@ header nav span{
 /* Skills */
 #Skills{
     color: white;
-    min-height: 800px;
+    min-height: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .icons{
